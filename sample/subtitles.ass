@@ -1,0 +1,26 @@
+[Script Info]
+Title: JOB-024 Ordinary Annuity PV
+ScriptType: v4.00+
+PlayResX: 1920
+PlayResY: 1080
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Noto Sans CJK TC,42,&H00FFFFFF,&H00FFFFFF,&H00543523,&H00000000,0,0,0,0,100,100,0,0,1,2,0,2,96,96,40,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:01.00,0:00:05.00,Default,,0,0,0,,小明租了一間小公寓。
+Dialogue: 0,0:00:05.00,0:00:14.00,Default,,0,0,0,,房東說：每月底付一千元，\N共付三十六個月。
+Dialogue: 0,0:00:15.00,0:00:22.00,Default,,0,0,0,,如果小明想一次付清，\N該付多少錢才公平？
+Dialogue: 0,0:00:22.00,0:00:29.00,Default,,0,0,0,,假設月利率是百分之一。
+Dialogue: 0,0:00:31.00,0:00:39.00,Default,,0,0,0,,未來的一千元，不等於現在的一千元。
+Dialogue: 0,0:00:40.00,0:00:49.00,Default,,0,0,0,,每一期都要「折現」回現在。
+Dialogue: 0,0:00:51.00,0:01:04.00,Default,,0,0,0,,把每期的現值全部加起來，\N就是年金現值。
+Dialogue: 0,0:01:06.00,0:01:13.00,Default,,0,0,0,,兩邊乘上 (1+i) 再相減，\N中間的項全部消掉。
+Dialogue: 0,0:01:14.00,0:01:24.00,Default,,0,0,0,,得到公式：PV 等於\NA 乘 (1 減 v 的 n 次方) 除以 i。
+Dialogue: 0,0:01:26.00,0:01:36.00,Default,,0,0,0,,代入 A=一千、i=百分之一，\N期數三十六。
+Dialogue: 0,0:01:37.00,0:01:44.00,Default,,0,0,0,,一次付清約三萬零一百零八元，\N比三萬六千元少了五千八百多元。
+Dialogue: 0,0:01:46.00,0:01:59.00,Default,,0,0,0,,同一個公式，也能算退休後\N每月領的錢，值多少現在的錢。
